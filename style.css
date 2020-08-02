@@ -8,12 +8,23 @@ html, body{
 
 #drawingspecs{
     background-color: rgb(156, 248, 248);
+    text-align: center;
     position:fixed;
     top:0;
     width:100%;
     z-index:100;
-    padding: .7em;
-    padding-left: 2em;
+    padding-bottom: .7em;
+    padding-top: .7em;
+    display: inline-block
+}
+
+.container{
+    padding:0;
+    margin: 0;
+}
+
+#width{
+    display: inline-block;
 }
 
 #draw{
@@ -29,5 +40,14 @@ html, body{
     margin: 0.5em;
 }
 
+button{
+    border-radius: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    display: inline-block;
+}
 
-
+button:focus{
+    outline: none;
+    
+}
