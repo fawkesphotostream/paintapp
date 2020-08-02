@@ -19,8 +19,11 @@ function resize() {
 
 window.addEventListener("resize", resize);
 canvas.addEventListener("mousedown", startdrawing);
+canvas.addEventListener("touchstart", startdrawing);
 canvas.addEventListener("mouseup", finishdrawing);
+canvas.addEventListener("touchend", finishdrawing);
 canvas.addEventListener("mousemove", draw);
+canvas.addEventListener("touchmove", draw);
 clear.addEventListener("click",erase);
 
 // Define positional
